@@ -1,0 +1,18 @@
+[package]
+name = "mongodb-helper"
+version = "0.1.7"
+authors = ["mehdi <mehdi@astrolab-agency.com>"]
+edition = "2018"
+documentation = "https://docs.rs/mongodb-helper"
+license = "Apache-2.0"
+description = "A mongodb helper"
+
+[dependencies]
+serde = "1.0.126"
+futures = "0.3.15"
+bson = "2.0.0-beta.1"
+
+[dependencies.mongodb]
+version = "2.0.0-beta.1"
+default-features = false
+features = ["async-std-runtime"]
