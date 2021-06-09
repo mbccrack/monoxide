@@ -8,8 +8,10 @@ mod find_one_and_update;
 mod insert_many;
 mod insert_one;
 mod update_many;
+mod connect;
 
 #[derive(Clone)]
 pub struct Database {
     pub db: mongodb::Database,
 }
+
