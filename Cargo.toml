@@ -1,6 +1,6 @@
 [package]
 name = "monoxide"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["mehdi <mehdi.bcheikh@gmail.com>"]
 edition = "2018"
 documentation = "https://docs.rs/monoxide"
@@ -15,4 +15,4 @@ bson = "2.0.0-beta.1"
 [dependencies.mongodb]
 version = "2.0.0-beta.1"
 default-features = false
-features = ["async-std-runtime"]
+features = ["tokio-runtime"]
