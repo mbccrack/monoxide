@@ -1,7 +1,7 @@
 use bson::Bson;
 use mongodb::options::InsertManyOptions;
-use std::collections::HashMap;
 use mongodb::Collection;
+use std::collections::HashMap;
 
 impl super::Database {
     pub async fn insert_many<D, R>(

@@ -14,7 +14,10 @@ impl super::Database {
         for<'r> R: serde::Deserialize<'r>,
     {
         let collection: Collection = self.db.collection(&String::from(collection));
-        match match collection.find_one_and_update(filter, update, options).await {
+        match match collection
+            .find_one_and_update(filter, update, options)
+            .await
+        {
             Ok(doc) => doc,
             Err(e) => return Err(e.to_string()),
         } {

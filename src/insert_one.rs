@@ -28,7 +28,7 @@ impl super::Database {
             Ok(inserted) => {
                 let inserted_id: R = match bson::from_bson(inserted.inserted_id) {
                     Ok(inserted_id) => inserted_id,
-                    Err(e) =>  return Err(e.to_string())
+                    Err(e) => return Err(e.to_string()),
                 };
                 Ok(inserted_id)
             }

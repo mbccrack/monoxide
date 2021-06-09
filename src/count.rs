@@ -14,6 +14,6 @@ impl super::Database {
         return match collection.count_documents(filter, count_options).await {
             Ok(r) => Ok(r),
             Err(e) => Err(e.to_string()),
-        }
+        };
     }
 }
