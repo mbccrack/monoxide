@@ -1,9 +1,9 @@
 [package]
-name = "mongodb-helper"
-version = "0.1.7"
-authors = ["mehdi <mehdi@astrolab-agency.com>"]
+name = "monoxide"
+version = "0.0.1"
+authors = ["mehdi <mehdi.bcheikh@gmail.com>"]
 edition = "2018"
-documentation = "https://docs.rs/mongodb-helper"
+documentation = "https://docs.rs/monoxide"
 license = "Apache-2.0"
 description = "A mongodb helper"
 
