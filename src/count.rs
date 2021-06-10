@@ -8,7 +8,7 @@ impl super::Database {
         collection: &str,
         filter: Option<Document>,
         count_options: Option<CountOptions>,
-    ) -> Result<u64, String> {
+    ) -> Result<i64, String> {
         let collection: Collection = self.db.collection(&String::from(collection));
 
         return match collection.count_documents(filter, count_options).await {

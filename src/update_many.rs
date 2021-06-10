@@ -9,7 +9,7 @@ impl super::Database {
         query: Document,
         update: Document,
         options: Option<UpdateOptions>,
-    ) -> Result<u64, String> {
+    ) -> Result<i64, String> {
         let collection: Collection = self.db.collection(&String::from(collection));
 
         match collection.update_many(query, update, options).await {

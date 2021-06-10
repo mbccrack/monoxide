@@ -8,7 +8,7 @@ impl super::Database {
         collection: &str,
         query: Document,
         options: Option<DeleteOptions>,
-    ) -> Result<u64, String> {
+    ) -> Result<i64, String> {
         let collection: Collection = self.db.collection(&String::from(collection));
 
         match collection.delete_many(query, options).await {
